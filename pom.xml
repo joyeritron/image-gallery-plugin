@@ -3,13 +3,12 @@
 	<parent>
 		<groupId>org.jenkins-ci.plugins</groupId>
 		<artifactId>plugin</artifactId>
-		<version>1.580.3</version><!-- which version of Jenkins is this plugin 
-			built against? -->
+		<version>2.2</version>
 	</parent>
 
 	<groupId>com.tupilabs.image_gallery</groupId>
 	<artifactId>image-gallery</artifactId>
-	<version>1.5-SNAPSHOT</version>
+	<version>1.5-joyeritron-forked</version>
 	<packaging>hpi</packaging>
 
 	<name>Image Gallery Plug-in</name>
@@ -39,7 +38,10 @@
 	<inceptionYear>2012</inceptionYear>
 
 	<properties>
+		<jenkins.version>2.19.1</jenkins.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jenkins-test-harness.version>2.19</jenkins-test-harness.version>
+		<findbugs.failOnError>false</findbugs.failOnError>
 	</properties>
 
 	<scm>

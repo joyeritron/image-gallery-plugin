@@ -136,7 +136,7 @@ public class ArchivedImagesGalleryBuildAction implements Action, Serializable {
 	}
 
     public Object readResolve() {
-		String width = (imageWidth != null && imageWidth > 0) ? Integer.toString(imageWidth) : imageWidthText;
+		String width = imageWidthText;
 
         return new ArchivedImagesGalleryBuildAction(
                 title,
